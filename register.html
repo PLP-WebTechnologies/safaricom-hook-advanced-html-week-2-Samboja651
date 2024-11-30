@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Simple FORM in Plain HTML">
+    <title>Register</title>
+</head>
+<body>
+    <header>
+        <h1>A Simple Form in Plain HTML</h1>
+        <hr>
+    </header>
+    <main>
+        <section>
+            <form action="#" method="post">
+                <label for="fullname">Full Name: </label>
+                <input type="text" name="fullname" required maxlength="35" minlength="5">
+                <br><br>
+
+                <label for="email">Email: </label>
+                <input type="email" name="email" required minlength="11" maxlength="35" pattern=".+@gmail.com" title="gmail accounts only">
+                <br><br>
+
+                <label for="password">Password: </label>
+                <input type="password" name="password" title="combine uppercase, numbers, and lowercase characters." required minlength="8" maxlength="16" autocomplete="new-password">
+                <br><br>
+
+                <label for="age">Age: </label>
+                <input type="number" required min="18" max="99">
+                <br><br>
+
+                <fieldset>
+                    <legend>Select Gender</legend>
+                    <div>
+                        <input type="radio" name="gender" id="male" value="male" checked>
+                        <label for="male">Male</label>
+
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </fieldset>
+                <br>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
